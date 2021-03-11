@@ -6,5 +6,5 @@ metadata:
 spec:
   type: github
   targets:
-    - https://github.com/crivetechie/backstage-demo-component-producer/blob/main/catalog-info-component.yaml
-    - https://github.com/crivetechie/backstage-demo-component-producer/blob/main/catalog-info-api.yaml
+    - ./catalog-info-component.yaml
+    - ./catalog-info-api.yaml
