@@ -1,9 +1,31 @@
 apiVersion: backstage.io/v1alpha1
-kind: Location
+kind: Component
 metadata:
-  name: backstage-demo-component-producer
-  description: deployment consumer
+  name: demo-producer
+  description: produces demo events
+  labels:
+    application: demo-app
+  tags:
+    - go
+    - lambda
 spec:
-  targets:
-    - ./catalog-info-component.yaml
-    - ./catalog-info-api.yaml
+  type: service
+  lifecycle: production
+  owner: demo-team
+  system: demo-system
+  providesApis: 
+    - demo-producer-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-producer-api
+  description: a demo api
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: crivetechie
+  system: demo-system
+  definition:
+    $text: https://github.com/crivetechie/backstage-demo-component-producer/blob/main/async-api.yaml
+  
