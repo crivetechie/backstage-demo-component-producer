@@ -9,4 +9,4 @@ spec:
   owner: crivetechie
   system: demo-system
   definition:
-    $text: https://github.com/crivetechie/backstage-poc/blob/master/webhook.openapi.yaml
+    $text: https://github.com/crivetechie/backstage-demo-component-producer/blob/main/async-api.yaml
