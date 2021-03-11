@@ -12,5 +12,6 @@ spec:
   type: service
   lifecycle: production
   owner: demo-team
+  system: demo-system
   providesApis: 
     - demo-producer-api

@@ -7,5 +7,6 @@ spec:
   type: asyncapi
   lifecycle: production
   owner: crivetechie
+  system: demo-system
   definition:
     $text: https://github.com/crivetechie/backstage-poc/blob/master/webhook.openapi.yaml
