@@ -4,7 +4,6 @@ metadata:
   name: backstage-demo-component-producer
   description: deployment consumer
 spec:
-  type: github
   targets:
     - ./catalog-info-component.yaml
     - ./catalog-info-api.yaml
