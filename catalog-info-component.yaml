@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: demo-producer
+  description: produces demo events
+  labels:
+    application: demo-app
+  tags:
+    - go
+    - lambda
+spec:
+  type: service
+  lifecycle: production
+  owner: demo-team
+  providesApis: 
+    - demo-producer-api

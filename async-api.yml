@@ -1,0 +1,27 @@
+asyncapi: 2.0.0
+info:
+  title: Demo API
+  version: '1.0.0'
+  contact:
+    name: DemoTeam
+    email: org@demoteam.com
+servers:
+  production:
+    url: topic-arn
+    protocol: sns
+channels:
+  demo:
+    parameters:
+      demoId:
+        $ref: '#/components/parameters/demoId'
+        
+components:
+  messages:
+    demo:
+      payload:
+        type: object
+  parameters:
+    demoId:
+      description: The ID of the demo.
+      schema:
+        type: string

@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-producer-api
+  description: a demo api
+spec:
+  type: asyncapi
+  lifecycle: production
+  owner: crivetechie
+  definition:
+    $text: https://github.com/crivetechie/backstage-poc/blob/master/webhook.openapi.yaml
